@@ -12,3 +12,17 @@ body{
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
+.menu{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+ position: absolute;
+ list-style: none;   
+}
