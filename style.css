@@ -42,6 +42,19 @@ body{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
     font-size: 2em;
+    transition: transform 1.25s;
+    -webkit-transition: transform 1.25s;
+    -moz-transition: transform 1.25s;
+    -ms-transition: transform 1.25s;
+    -o-transition: transform 1.25s;
+}
+
+.menu.active .toggle{
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
 }
