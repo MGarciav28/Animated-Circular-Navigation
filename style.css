@@ -48,6 +48,20 @@ body{
  -o-transform: rotate(calc(360deg/8*var(--i)));
 }
 
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 .toggle{
     position: absolute;
     width: 60px;
