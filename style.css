@@ -15,8 +15,7 @@ body{
 .menu{
     position: relative;
     width: 200px;
-    height: 200px;
-    /* background: #0f0; */
+    height: 200px;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,13 +26,14 @@ body{
  left: 0;
  list-style: none;
  transform-origin: 100px;
- transition: 0.5s;
+ /*Aqui se ajusta la velocidad con que desaparecen los iconos*/
+ transition:1.2s;
  transition-delay: calc(0.3s*var(--i));
  transform: rotate(0deg) translateX(80px);
- -webkit-transition: 0.5s;
- -moz-transition: 0.5s;
- -ms-transition: 0.5s;
- -o-transition: 0.5s;
+ -webkit-transition:1s;
+ -moz-transition:1s;
+ -ms-transition:1s;
+ -o-transition:1s;
  -webkit-transform: rotate(0deg) translateX(80px);
  -moz-transform: rotate(0deg) translateX(80px);
  -ms-transform: rotate(0deg) translateX(80px);
@@ -41,17 +41,21 @@ body{
 }
 
 .menu.active li{
+/* En esta linea se establece la rotacion de cada elemento como: 
+el resultado de 360deg/8 (45deg) por el valor de la variable --i (0,1,2,..7) */ 
  transform: rotate(calc(360deg/8*var(--i)));
- transition: 0.5s;
- transition-delay: calc(0.1s*var(--i)); //Aqui se ajusta la velocidad con que aparecen los iconos
- -webkit-transform:;
- -moz-transform:;
- -ms-transform:;
- -o-transform:;
- -webkit-transition: 0.5s;
- -moz-transition: 0.5s;
- -ms-transition: 0.5s;
- -o-transition: 0.5s;
+ /*Aqui se ajusta la velocidad con que aparecen los iconos*/
+ transition:1.2s;
+ transition-delay: calc(0.1s*var(--i));
+ -webkit-transform:rotate(calc(360deg/8*var(--i)));
+ -moz-transform: rotate(calc(360deg/8*var(--i)));
+ -ms-transform: rotate(calc(360deg/8*var(--i)));
+ -o-transform: rotate(calc(360deg/8*var(--i)));
+ -webkit-transition:1s;
+ -moz-transition:1s;
+ -ms-transition:1s;
+ -o-transition:1s;
+ -webkit-transform: rotate(calc(360deg/8*var(--i)));
 }
 
 .menu li a{
@@ -62,6 +66,8 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    /* Esta linea corrige la rotacion de cada icono usando el mismo calculo anteriomente mencionado
+    -45*el valor de --i (0,1,2,..7) */
     transform: rotate(calc(360deg/-8*var(--i)));
     box-shadow: 0 3px 4px rgba(0,0,0,0.15);
     color: #111;
