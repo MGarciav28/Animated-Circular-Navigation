@@ -26,14 +26,13 @@ body{
  left: 0;
  list-style: none;
  transform-origin: 100px;
- /*Aqui se ajusta la velocidad con que desaparecen los iconos*/
- transition:1.2s;
+ /*Aquiseajustalavelocidadconquedesaparecenlosiconos*/transition:1.2s;
  transition-delay: calc(0.3s*var(--i));
  transform: rotate(0deg) translateX(80px);
- -webkit-transition:1s;
- -moz-transition:1s;
- -ms-transition:1s;
- -o-transition:1s;
+ -webkit-transition:1.2s;
+ -moz-transition:1.2s;
+ -ms-transition:1.2s;
+ -o-transition:1.2s;
  -webkit-transform: rotate(0deg) translateX(80px);
  -moz-transform: rotate(0deg) translateX(80px);
  -ms-transform: rotate(0deg) translateX(80px);
@@ -41,13 +40,14 @@ body{
 }
 
 .menu.active li{
-/* En esta linea se establece la rotacion de cada elemento como: 
-el resultado de 360deg/8 (45deg) por el valor de la variable --i (0,1,2,..7) */ 
+ /*En esta linea se establece la rotacion de cada elemento como
+ el resultado de 360deg/8(45deg) por el valor de la variable--i(0,1,2,..7)*/
+ 
+ 
  transform: rotate(calc(360deg/8*var(--i)));
- /*Aqui se ajusta la velocidad con que aparecen los iconos*/
- transition:1.2s;
+ /*Aquiseajustalavelocidadconqueaparecenlosiconos*/transition:1.2s;
  transition-delay: calc(0.1s*var(--i));
- -webkit-transform:rotate(calc(360deg/8*var(--i)));
+ -webkit-transform: rotate(calc(360deg/8*var(--i)));
  -moz-transform: rotate(calc(360deg/8*var(--i)));
  -ms-transform: rotate(calc(360deg/8*var(--i)));
  -o-transform: rotate(calc(360deg/8*var(--i)));
