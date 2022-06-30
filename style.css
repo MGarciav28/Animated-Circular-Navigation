@@ -45,7 +45,8 @@ body{
  
  
  transform: rotate(calc(360deg/8*var(--i)));
- /*Aquiseajustalavelocidadconqueaparecenlosiconos*/transition:1.2s;
+ /*Aquiseajustalavelocidadconqueaparecenlosiconos*/
+ transition:1.2s;
  transition-delay: calc(0.1s*var(--i));
  -webkit-transform: rotate(calc(360deg/8*var(--i)));
  -moz-transform: rotate(calc(360deg/8*var(--i)));
